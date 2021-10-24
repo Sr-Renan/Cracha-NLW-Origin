@@ -71,7 +71,9 @@ a {
 }
 
 p {
+  font-size: 0.9rem;
   margin-top: 2rem;
+  text-align: justify;
 }
 
 ul {
