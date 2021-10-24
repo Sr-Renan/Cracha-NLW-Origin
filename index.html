@@ -28,41 +28,62 @@
             alt="Foto do usuario do cartão"
           />
         </div>
-        <h1>Renan Viana</h1>
+        <h1 id="UserName">Renan Viana</h1>
 
-        <a href="https://github.com/Sr-Renan">
+        <a href="https://github.com/Sr-Renan" target="_blank">
           <img src="images/github.svg" alt="Foto logo Github" />
           Sr-Renan
         </a>
 
         <p>An instructor focused on helping pople start programming for web</p>
 
-        <ul>
-          <li>
+        <ul id="SocialLinks">
+          <li class="youtube">
             <a href="https://www.youtube.com" target="_blank">
               <img src="images/youtube.svg" alt="Logo Youtube" />
             </a>
           </li>
 
-          <li>
+          <li class="facebook">
             <a href="https://pt-br.facebook.com" target="_blank">
               <img src="images/facebook.svg" alt="Logo Facebook" />
             </a>
           </li>
 
-          <li>
+          <li class="instagram">
             <a href="https://www.instagram.com/renanvianarv/" target="_blank">
               <img src="images/instagram.svg" alt="Logo Instagram" />
             </a>
           </li>
 
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com" target="_blank">
-              <img src="images/twitter.svg" alt="Logo Twitter" />
+              <img src="images/linkedin.svg" alt="Logo linkedin" />
             </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+      const LinksSocialMedia = {
+        github: 'Sr-Renan',
+        youtube: 'channel/UC-9vxQ_lg9jp02elLKv1KhA',
+        facebook: '',
+        instagram: 'renanvianarv',
+        linkedin: 'in/renan-viana-37498b1b0'
+      }
+
+      //Fazendo função de setar as novas redes social.
+      function ChangeSocialMediaLinks() {
+        for (let li of SocialLinks.children) {
+          const Social = li.getAttribute('class')
+
+          li.children[0].href = `https://${Social}.com/${LinksSocialMedia[Social]}`
+        }
+      }
+      //Chamando a função acima.
+      ChangeSocialMediaLinks()
+    </script>
   </body>
 </html>
