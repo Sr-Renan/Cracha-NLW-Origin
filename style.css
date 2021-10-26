@@ -25,10 +25,6 @@ main {
   height: 100vh;
 }
 
-.card {
-  border-radius: 20px;
-}
-
 .container {
   max-width: 250px;
   margin-left: auto;
@@ -90,4 +86,32 @@ ul {
   gap: 0.5rem; /*Espaços entre os elementos da lista*/
 
   justify-content: center;
+}
+
+#youtube {
+  border-radius: 10px;
+}
+
+#facebook {
+  border-radius: 10px;
+}
+
+#instagram {
+  border-radius: 10px;
+}
+#linkedin {
+  border-radius: 10px;
+}
+
+/* Phone breakpoint */
+@media screen and (min-width: 600px) {
+}
+/* Tablet Portrait breakpoint */
+@media screen and (min-width: 900px) {
+}
+/* Desktop breakpoint */
+@media screen and (min-width: 1200px) {
+}
+/* Big Descktop breakpoint */
+@media screen and (min-width: 1800px) {
 }
